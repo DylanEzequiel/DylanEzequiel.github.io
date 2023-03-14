@@ -28,7 +28,7 @@ function calculate(type, num1, num2) {
 
       return num1 / num2;
     default:
-      return "Indefinido";
+      return Math.floor(Math.random() * 42) + 1;
   }
 }
 
@@ -36,5 +36,5 @@ const button = document.getElementById("executer");
 
 button.onclick = () => {
 
-  demo.innerHTML = calculate("div", 9, 8);
+  demo.innerHTML = calculate();
 }
