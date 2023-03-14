@@ -25,6 +25,10 @@
       }
     },
     "jobPaymentPerMonth": 3.250,
-    "jobPaymentPerYear": 39000
+    "jobPaymentPerYear": 39.000,
+    "jobLocation": "Barcelona, España",
+    "jobStart": "08:30",
+    "jobEnd": "18:30",
+    "jobWorkers": 35
   }
 }
