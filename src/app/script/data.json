@@ -1,0 +1,30 @@
+{
+  "userData": {
+    "userName": "Dylan Ezequiel",
+    "userEmail": "dylan.ezequiel1606@gmail.com",
+    "userPassword": "********",
+    "userId": 99124400
+  },
+
+  "jobData": {
+    "jobName": "Programador",
+    "jobType": "Oficina",
+    "jobEducation": "Universidad",
+    "jobKnowledge": {
+      "Desarrollo Web": {
+        "Front-End": [
+          "HTML", "CSS", "JavaScript",
+          "SASS", "TypeScript", "JSON",
+          "XML", "YAML"
+        ],
+
+        "Back-End": [
+          "Git", "Node.js", "Python", "PHP", "ASP",
+          "SQL", "Java", "C#", ".NET", "Bash"
+        ]
+      }
+    },
+    "jobPaymentPerMonth": 3.250,
+    "jobPaymentPerYear": 39000
+  }
+}
