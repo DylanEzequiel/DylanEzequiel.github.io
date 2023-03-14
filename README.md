@@ -16,3 +16,5 @@
     - main.js
     - data.json
     - accessData.json
+
+> El propósito de este repositorio es el de probar y aprender Git mientras pones en práctica lo que has aprendido con otros lenguajes, sean de marcado, estilos o programacion.
