@@ -41,7 +41,7 @@ button:active {
   background-color: rgb(225, 0, 125);
 }
 
-p#demo {
+#demo {
   margin: 0.75rem;
   padding: 10px;
   width: fit-content;
@@ -50,4 +50,49 @@ p#demo {
   text-align: justify;
   font-family: 'JetBrains Mono', sans-serif;
   font-size: 1em;
+}
+
+@keyframes rainbow {
+  0% {
+    border-color: hsl(0, 100%, 25%);
+    background-color: hsl(0, 100%, 50%);
+  }
+
+  15% {
+    border-color: hsl(30, 100%, 25%);
+    background-color: hsl(30, 100%, 50%);
+  }
+
+  30% {
+    border-color: hsl(60, 100%, 25%);
+    background-color: hsl(60, 100%, 50%);
+  }
+
+  45% {
+    border-color: hsl(120, 100%, 25%);
+    background-color: hsl(120, 100%, 50%);
+  }
+
+  60% {
+    border-color: hsl(180, 100%, 25%);
+    background-color: hsl(180, 100%, 50%);
+  }
+
+  75% {
+    border-color: hsl(240, 100%, 25%);
+    background-color: hsl(240, 100%, 50%);
+  }
+
+  100% {
+    border-color: hsl(280, 100%, 25%);
+    background-color: hsl(280, 100%, 50%);
+  }
+}
+
+#rainbow {
+  animation-name: rainbow;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

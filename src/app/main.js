@@ -51,25 +51,31 @@ function selectColor() {
   };
 
   let input = prompt("Introduce un color");
-  
-  switch (input) {
-    case /rojo/i:
+
+  switch (true) {
+    case (/rojo/i).test(input):
       demo.innerHTML = COLORS.PRIMARY[0];
+      demo.style.color = "#F00";
       break;
-    case /verde/i:
+    case (/verde/i).test(input):
       demo.innerHTML = COLORS.PRIMARY[1];
+      demo.style.color = "#0F0";
       break;
-    case /azul/i:
+    case (/azul/i).test(input):
       demo.innerHTML = COLORS.PRIMARY[2];
+      demo.style.color = "#00F";
       break;
-    case /amarillo/i:
+    case (/amarillo/i).test(input):
       demo.innerHTML = COLORS.SECONDARY[0];
+      demo.style.color = "#FF0";
       break;
-    case /rosa/i:
+    case (/rosa/i).test(input):
       demo.innerHTML = COLORS.SECONDARY[1];
+      demo.style.color = "#F0F";
       break;
-    case /celeste/i:
+    case (/celeste/i).test(input):
       demo.innerHTML = COLORS.SECONDARY[2];
+      demo.style.color = "#0FF";
       break;
     default:
       demo.innerHTML = "¡Este color no está en la lista!";
