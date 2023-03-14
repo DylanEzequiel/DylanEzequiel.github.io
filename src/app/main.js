@@ -6,33 +6,29 @@ function calculate(type, num1, num2) {
 
   switch (type) {
     case 0:
-      type = num1 + num2;
-
       if (num2 == undefined) {
         num2 = 0;
       }
-      break;
+
+      return num1 + num2;
     case 1:
-      type = num1 - num2;
-
       if (num2 == undefined) {
         num2 = 0;
       }
-      break;
+
+      return num1 - num2;
     case 2:
-      type = num1 * num2;
-
       if (num2 == undefined) {
         num2 = 1;
       }
-      break;
+
+      return num1 * num2;
     case 3:
-      type = num1 / num2;
-
       if (num2 == undefined) {
         num2 = 1;
       }
-      break;
+
+      return num1 / num2;
     default:
       type = "Indefinido.";
   }
@@ -40,4 +36,9 @@ function calculate(type, num1, num2) {
   return type;
 }
 
-demo.innerHTML = calculate("sum");
+const button = document.getElementById("executer");
+
+button.onclick = () => {
+
+  demo.innerHTML = calculate("sum", 9, 8);
+}
