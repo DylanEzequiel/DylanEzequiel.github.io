@@ -2,43 +2,39 @@ const demo = document.getElementById("demo");
 
 function calculate(type, num1, num2) {
 
-  type = ["sum", "sus", "mul", "div"];
-
   switch (type) {
-    case 0:
+    case "sum":
       if (num2 == undefined) {
         num2 = 0;
       }
 
       return num1 + num2;
-    case 1:
+    case "sus":
       if (num2 == undefined) {
         num2 = 0;
       }
 
       return num1 - num2;
-    case 2:
+    case "mul":
       if (num2 == undefined) {
         num2 = 1;
       }
 
       return num1 * num2;
-    case 3:
+    case "div":
       if (num2 == undefined) {
         num2 = 1;
       }
 
       return num1 / num2;
     default:
-      type = "Indefinido.";
+      return "Indefinido";
   }
-
-  return type;
 }
 
 const button = document.getElementById("executer");
 
 button.onclick = () => {
 
-  demo.innerHTML = calculate("sum", 9, 8);
+  demo.innerHTML = calculate("div", 9, 8);
 }
