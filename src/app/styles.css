@@ -95,4 +95,51 @@ button:active {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  transition: all 0.3s linear;
+}
+
+@keyframes rainbowHover {
+  0% {
+    border-color: hsl(0, 100%, 50%);
+    background-color: hsl(0, 100%, 75%);
+  }
+
+  15% {
+    border-color: hsl(30, 100%, 50%);
+    background-color: hsl(30, 100%, 75%);
+  }
+
+  30% {
+    border-color: hsl(60, 100%, 50%);
+    background-color: hsl(60, 100%, 75%);
+  }
+
+  45% {
+    border-color: hsl(120, 100%, 50%);
+    background-color: hsl(120, 100%, 75%);
+  }
+
+  60% {
+    border-color: hsl(180, 100%, 50%);
+    background-color: hsl(180, 100%, 75%);
+  }
+
+  75% {
+    border-color: hsl(240, 100%, 50%);
+    background-color: hsl(240, 100%, 75%);
+  }
+
+  100% {
+    border-color: hsl(280, 100%, 50%);
+    background-color: hsl(280, 100%, 75%);
+  }
+}
+
+#rainbow:hover {
+  animation-name: rainbowHover;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: #000;
 }
