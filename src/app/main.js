@@ -79,5 +79,6 @@ function selectColor() {
       break;
     default:
       demo.innerHTML = "¡Este color no está en la lista!";
+      demo.style.color = "#aaa";
   }
 }
